@@ -8,7 +8,9 @@ import { IPizzaOrders } from '../models/pizza-orders';
   providedIn: 'root',
 })
 export class PizzaService {
-  private _socketUrl: string = 'http://localhost:9090/pizza';
+  // private _socketUrl: string = 'http://localhost:9090/pizza';
+  private _socketUrl: string =
+    'https://node-express-sockets-pizza-order-server.onrender.com/pizza';
   private _socket;
   constructor() {
     this._socket = io(this._socketUrl);
