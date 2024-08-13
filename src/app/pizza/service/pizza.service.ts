@@ -25,7 +25,7 @@ export class PizzaService {
       this._socket.on('pizzaOrdersCount', (pizzaCount) => {
         observer.next(pizzaCount);
       });
-    }); 
+    });
   }
   newPizzaOrder(order: IPizzaOrders): void {
     this._socket.emit('newPizzaOrder', order);
