@@ -1,0 +1,1 @@
+ng build  --base-href https://snopbear.github.io/angular-sockets-pizza-order-client/
