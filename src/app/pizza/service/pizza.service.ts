@@ -9,7 +9,7 @@ import { IPizzaOrders } from '../models/pizza-orders';
 })
 export class PizzaService {
   // private _socketUrl: string = 'http://localhost:9090/pizza';
-  private _socketUrl: string =
+  private _socketUrl: string = 
     'https://node-express-sockets-pizza-order-server.onrender.com/pizza';
   private _socket;
   constructor() {
